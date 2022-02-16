@@ -6,26 +6,46 @@ class Subscription extends Model{}
 
 Subscription.init(
     {
-        Subscription_id:{
+        subscription_id:{
             type:DataTypes.INTEGER,
+            allowNull: false,
             primaryKey: true,
             autoIncremnt:true
         },
-        businessName:{
-            type: DataTypes.STRING
+        subname:{
+            type: DataTypes.STRING,
+            allowNull: false
         },
 
-        amount:{
-            type:DataTypes.FLOAT
+        description:{
+            type:DataTypes.STRING,
+            allowNull: false
         },
 
-        due:{
-            type:DataTypes.DATEONLY
+        link:{
+            type:DataTypes.STRING,
+            allowNull: false
         },
 
-        renew:{
-            type:DataTypes.STRING
+        cycle:{
+            type:DataTypes.STRING,
+            allowNull: false
         },
+
+        date:{
+            type:DataTypes.STRING,
+            allowNull: false
+        },
+
+        payment:{
+            type:DataTypes.INTEGER,
+            allowNull: false
+        },
+
+        remind:{
+            type:DataTypes.STRING,
+            allowNull: false
+        }
     },
 
     { 

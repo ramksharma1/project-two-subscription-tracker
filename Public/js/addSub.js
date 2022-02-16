@@ -16,11 +16,11 @@ async function addSubscriptionFormHandler(event) {
         const response = await fetch ('/api/subscriptions/', {
             method: 'POST',
             body: JSON.stringify({
-                name,
+                subname,
                 description,
                 link,
-                date,
                 cycle,
+                date,
                 payment,
                 remind
             }),
