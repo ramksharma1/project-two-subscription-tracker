@@ -10,16 +10,15 @@ body {
     background-color: #5B86E5;
 }
 
-.app {
+.row {
     display: flex;
+    float: right;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    margin-right: 30px;
 }
 
-.login-header{
-    justify-content: center;
-}
 form {
     display: block;
     width: 100%;
@@ -28,6 +27,7 @@ form {
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 5px 5px 10px 5px;
+    
 }
 
 form h1 {
@@ -74,3 +74,9 @@ form button {
     font-size: 24px;
 }
 
+@media screen and (max-width: 500px ){
+    .row{
+        float: left;
+        margin-right: 0px;
+    }
+}
