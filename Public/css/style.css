@@ -27,7 +27,6 @@ form {
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 5px 5px 10px 5px;
-    
 }
 
 form h1 {
@@ -37,7 +36,7 @@ form h1 {
 }
 
 form .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     width: 500px;
 }
 
@@ -51,7 +50,7 @@ form input {
     appearance: none;
     outline: none;
     border: none;
-    background-color: #aec4f3;
+    background-color: #5B86E5;
     width: 80%;
     height: 40px;
     border: 1px solid black;
@@ -72,8 +71,21 @@ form button {
     color: #82a4ec;
     border-radius: 5px;
     font-size: 24px;
+    cursor: pointer;
 }
 
+
+.signup-link {
+    font-weight:bold;
+    align-self: center;
+    float: right;
+    margin-right: 80px;
+    
+}
+
+span a {
+    color: #426ecc;
+}
 @media screen and (max-width: 500px ){
     .row{
         float: left;
