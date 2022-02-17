@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
             payment: req.body.payment,
             remind: req.body.remind,
             user_id: req.session.user_id
-        })
+        });
         console.log(req.session.user_id);
         res.status(200).json(dbUserData);
     } catch (err) {

@@ -22,7 +22,7 @@ async function registrationFormHandler(event) {
             console.log('success');
 
 
-            document.location.replace('/'); // verify name dashboard
+            document.location.replace('/');
 
         } else {
             alert(response.statusText);
