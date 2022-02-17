@@ -10,7 +10,6 @@ async function addSubscriptionFormHandler(event) {
     const remind = document.querySelector('#remind1').value.trim();
 
 
-
     if (subname, description, link, date, cycle, payment, remind) {
 
         const response = await fetch ('/api/subscriptions/', {
@@ -22,7 +21,7 @@ async function addSubscriptionFormHandler(event) {
                 cycle,
                 date,
                 payment,
-                remind
+                remind,
             }),
             headers: {
                 'Content-Type': 'application/json'
@@ -37,5 +36,7 @@ async function addSubscriptionFormHandler(event) {
         }
     }
 }
+
+
 
 document.querySelector('#addSub').addEventListener('submit', addSubscriptionFormHandler);
