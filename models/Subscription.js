@@ -6,12 +6,12 @@ class Subscription extends Model{}
 
 Subscription.init(
     {
-        subscription_id:{
-            type:DataTypes.INTEGER,
+        id: {
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncremnt:true
-        },
+            autoIncrement: true,
+          },
         subname:{
             type: DataTypes.STRING,
             allowNull: false

@@ -16,6 +16,8 @@ const Subscription =require('./Subscription');
 //     onDelete:"CASCADE"
 // })
 
+
+
 module.exports={
     User,
     Subscription,
