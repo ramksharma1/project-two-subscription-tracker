@@ -1,10 +1,10 @@
 const User=require('./User');
-const Post=require('./Subscription');
+const Subscription =require('./Subscription');
 
-Post.belongsTo(User,{
-    foreignKey:"UserID",
-    onDelete:"CASCADE"
-})
+// Post.belongsTo(User,{
+//     foreignKey:"UserID",
+//     onDelete:"CASCADE"
+// })
 
 // Subscription.belongsTo(User,{
 //     foreignKey:"UserID",
@@ -18,6 +18,6 @@ Post.belongsTo(User,{
 
 module.exports={
     User,
-    // Subscription,
-    Post
+    Subscription,
+    // Post
 }

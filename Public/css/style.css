@@ -50,7 +50,7 @@ form input {
     appearance: none;
     outline: none;
     border: none;
-    background-color: #5B86E5;
+    background-color: #7e9fe7;
     width: 80%;
     height: 40px;
     border: 1px solid black;
@@ -63,7 +63,7 @@ form input:not([type="submit"]):focus {
     box-shadow: 6px;
 }
 
-form button {
+.btn {
     display: block;
     width: 80%;
     padding: 15px;
@@ -86,6 +86,7 @@ form button {
 span a {
     color: #426ecc;
 }
+
 @media screen and (max-width: 500px ){
     .row{
         float: left;

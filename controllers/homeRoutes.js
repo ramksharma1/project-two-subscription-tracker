@@ -8,6 +8,14 @@ router.get('/', async (req, res) => {
     } 
 })
 
+router.get('/signup', async (req, res) => {
+    try {
+        res.render('signup');
+    } catch (err) {
+        res.status(500).json(err);
+    }
+})
+
 router.get('/dashboard', async (req, res) => {
     try {
         res.render('dashboard');
