@@ -1,11 +1,6 @@
 const User=require('./User');
 const Subscription =require('./Subscription');
 
-// Subscription.belongsTo(User,{
-//     foreignKey:"UserID",
-//     onDelete:"CASCADE"
-// })
-
 Subscription.belongsTo(User, {
     foreignKey: 'user_id'
 });
