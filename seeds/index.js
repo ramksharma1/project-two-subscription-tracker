@@ -3,6 +3,7 @@ const { User } = require('../models');
 
 const userData = require('./userData.json');
 
+// Creates test seeds for user
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 

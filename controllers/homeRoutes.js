@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Subscription, User } = require('../models');
 const withAuth = require('../utils/helpers');
 
+// Home propmts login page
 router.get('/', async (req, res) => {
     try {
         res.render('login');
@@ -10,6 +11,7 @@ router.get('/', async (req, res) => {
     } 
 })
 
+// Renders Signup handlebars
 router.get('/signup', async (req, res) => {
     try {
         res.render('signup');
@@ -18,8 +20,10 @@ router.get('/signup', async (req, res) => {
     }
 })
 
+// Loads dashboard
 router.get('/dashboard', withAuth, async (req, res) => {
     try {
+        // Creates array with all subscriptions for user that is signed in
         const subscriptionData = await Subscription.findAll({
             where: {
                 user_id: req.session.user_id
@@ -27,7 +31,8 @@ router.get('/dashboard', withAuth, async (req, res) => {
         })
 
         const subsData = subscriptionData.map((project) => project.get({ plain: true }));
-
+        
+        //  Dashboard is created with new array of subscriptions
         res.render('dashboard', {subsData});
 
     } catch (err) {
@@ -35,9 +40,9 @@ router.get('/dashboard', withAuth, async (req, res) => {
     }
 })
 
+// Renders page to add a subscription
 router.get('/add', withAuth, async (req, res) => {
     try {
-
         res.render('addSubscription');
     } catch (err) {
 

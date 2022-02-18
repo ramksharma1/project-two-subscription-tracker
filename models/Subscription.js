@@ -1,9 +1,11 @@
+// Creates model for Subscription
 const {Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 
 class Subscription extends Model{}
 
+// Creates subscription table
 Subscription.init(
     {
         id: {
@@ -46,4 +48,6 @@ Subscription.init(
         modelName:'Subscription'
     }
 );
+
+// Exports model
 module.exports = Subscription;
