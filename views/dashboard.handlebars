@@ -1,10 +1,20 @@
-<div class="dash-header">
-    <button> Add Subscription</button>
-    <button>Logout</button>
+<div class="subscription-container">
+    <div>
+        <div class="dash-header">
+            <button class="menu-button"><a href="/add" style="text-decoration: none; color: black;">New Sub</a></button>
+        <button class="menu-button">Logout</button>
+    </div>
+
+
+    <div>
+        {{#each subsData}}
+        <div class="subscription">
+        <h3>{{this.subname}}</h3>
+        <p>Description: {{this.description}}</p>
+        <p>Link: <a href="{{this.link}}" target="_blank">{{this.link}}</a></p>
+        <p>Price: ${{this.payment}}</p>
+        <p>Renews on {{this.renew}}</p>
+    </div>
+        {{/each}}
+    </div>
 </div>
-
-{{!-- <!-- {{#each subscription}} -->
-<div>
-    <!-- <p>Name: {{subscription.subname}}</p> -->
-
-</div> --}}

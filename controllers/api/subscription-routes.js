@@ -12,9 +12,6 @@ router.post('/', async (req, res) => {
 
         const timeString = time.toLocaleDateString('en-us', { year:'numeric', month: 'long', day:'numeric' })
 
-        console.log(typeof timeString);
-        console.log(timeString);
-
         const dbUserData = await Subscription.create({
             subname: req.body.subname,
             description: req.body.description,

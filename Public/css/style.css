@@ -92,6 +92,32 @@ span a {
     float:none;
 }
 
+.dash-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+}
+
+.menu-button {
+    width: 60%;
+    margin: 10px;
+    background-color: #008CBA;
+    border: none;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.subscription {
+    margin: 10%;
+    padding: 3%;
+    border: 5px solid black;
+}
+
+
 @media screen and (max-width: 500px ){
     .row{
         float: left;
