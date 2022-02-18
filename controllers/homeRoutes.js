@@ -30,7 +30,7 @@ router.get('/dashboard', async (req, res) => {
         if (req.session.loggedIn) {
             res.render('dashboard', {subsData});
         } else {
-            res.render('dashboard', {subsData});
+            res.render('login');
         }
     } catch (err) {
         res.status(500).json(err);
@@ -42,7 +42,7 @@ router.get('/add', async (req, res) => {
         if (req.session.loggedIn) {
             res.render('addSubscription');
         } else {
-            res.render('addSubscription');
+            res.render('login');
         }
     } catch (err) {
         res.status(500).json(err);

@@ -121,7 +121,7 @@ span a {
 
 @media screen and (max-width: 500px ){
     .row{
-        float: right;
-        margin-right: 0px;
+        margin-right: 0p;
+        margin-left: 10px;
     }
 }
