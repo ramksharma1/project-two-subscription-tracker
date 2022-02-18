@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Subscription, User } = require('../models');
+const withAuth = require('../utils/helpers');
 
 router.get('/', async (req, res) => {
     try {
@@ -17,7 +18,7 @@ router.get('/signup', async (req, res) => {
     }
 })
 
-router.get('/dashboard', async (req, res) => {
+router.get('/dashboard', withAuth, async (req, res) => {
     try {
         const subscriptionData = await Subscription.findAll({
             where: {
@@ -27,24 +28,19 @@ router.get('/dashboard', async (req, res) => {
 
         const subsData = subscriptionData.map((project) => project.get({ plain: true }));
 
-        if (req.session.loggedIn) {
-            res.render('dashboard', {subsData});
-        } else {
-            res.render('login');
-        }
+        res.render('dashboard', {subsData});
+
     } catch (err) {
         res.status(500).json(err);
     }
 })
 
-router.get('/add', async (req, res) => {
+router.get('/add', withAuth, async (req, res) => {
     try {
-        if (req.session.loggedIn) {
-            res.render('addSubscription');
-        } else {
-            res.render('login');
-        }
+
+        res.render('addSubscription');
     } catch (err) {
+
         res.status(500).json(err);
     }
 })
