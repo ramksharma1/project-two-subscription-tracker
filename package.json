@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ramksharma1/project-two-subscription-tracker#readme",
   "dependencies": {
+    "add-time": "^1.0.0",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^16.0.0",

@@ -27,22 +27,12 @@ Subscription.init(
             allowNull: false
         },
 
-        cycle:{
-            type:DataTypes.STRING,
-            allowNull: false
-        },
-
-        date:{
-            type:DataTypes.STRING,
-            allowNull: false
-        },
-
         payment:{
             type:DataTypes.INTEGER,
             allowNull: false
         },
 
-        remind:{
+        renew: {
             type:DataTypes.STRING,
             allowNull: false
         }

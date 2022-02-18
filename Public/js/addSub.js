@@ -4,13 +4,13 @@ async function addSubscriptionFormHandler(event) {
     const subname = document.querySelector('#subName1').value.trim();
     const description = document.querySelector('#description1').value.trim();
     const link = document.querySelector('#link1').value.trim();
-    const date = document.querySelector('#initDate1').value.trim();
-    const cycle = document.querySelector('#cycle1').value.trim();
+    // const date = document.querySelector('#initDate1').value.trim();
+    // const cycle = document.querySelector('#cycle1').value.trim();
     const payment = document.querySelector('#payment1').value.trim();
-    const remind = document.querySelector('#remind1').value.trim();
+    // const remind = document.querySelector('#remind1').value.trim();
 
 
-    if (subname, description, link, date, cycle, payment, remind) {
+    if (subname, description, link, payment) {
 
         const response = await fetch ('/api/subscriptions/', {
             method: 'POST',
@@ -18,10 +18,7 @@ async function addSubscriptionFormHandler(event) {
                 subname,
                 description,
                 link,
-                cycle,
-                date,
                 payment,
-                remind,
             }),
             headers: {
                 'Content-Type': 'application/json'

@@ -88,6 +88,10 @@ span a {
     color: #426ecc;
 }
 
+.new-sub-logo{
+    float:none;
+}
+
 @media screen and (max-width: 500px ){
     .row{
         float: left;
