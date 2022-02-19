@@ -1,41 +1,23 @@
-<h2 class= "new-sub-logo">New Subscription</h2>
-<div class="row">
- <form id="addSub">
-    <div class="form-group">
+<!--Asks for new user's subscription-->
+<form style="background-color: #FFFFFF"  id="addSub">
+  <h2 class= "new-sub-logo">New Subscription</h2>
+   <div class="form-label">
       <label for="subName1">Name</label>
-      <input type="subName" id="subName1">
+      <input class="form-control" type="subName" id="subName1">
     </div>
-
-    <div class="form-group">
+    <div class="form-label">
         <label for="description1">Description</label>
-        <input type="description" id="description1">
+        <input class="form-control" type="description" id="description1">
     </div>
       
-    <div class="form-group">
+    <div class="form-label">
         <label for="link1">Link</label>
-        <input type="link" id="link1">
+        <input class="form-control" type="link" id="link1">
     </div>      
-
-    {{!-- <div class="form-group">
-      <label for="initDate1">Initiation Date</label>
-      <input type="initDate" class="form-control" id="initDate1">
-    </div> --}}
-
-    {{!-- <div class="form-group">
-        <label for="cycle1">Cycle</label>
-        <select class="form-control" name="cycle" id="cycle1">
-            <option value="Annual">Annual</option>"
-            <option value="Monthly">Monthly</option>"
-        </select>
-    </div> --}}
-
-    <div class="form-group">
+    <div class="form-label">
         <label for="payment1">Payment Amount</label>
-        <input type="payment" id="payment1">
+        <input class="form-control" type="payment" id="payment1">
     </div>
-
-
     <button type="submit" class="btn btn-primary" id="addBtn">Add Subscription</button>
    </form>
-</div>
   <script src="./js/addSub.js"></script>

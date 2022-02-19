@@ -1,3 +1,4 @@
+// Logs out the user from the site
 const logout = async () => {
     const response = await fetch('/api/users/logout', {
       method: 'POST',

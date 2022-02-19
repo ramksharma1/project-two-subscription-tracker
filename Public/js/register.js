@@ -1,3 +1,4 @@
+//  Allows you to register to the cite 
 async function registrationFormHandler(event) {
     event.preventDefault();
 
@@ -5,7 +6,7 @@ async function registrationFormHandler(event) {
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
 
-
+    // check if user is logged in before you get rerouted
     if (username && email && password) {
         const response = await fetch('/api/users/', {
             method: 'POST',
