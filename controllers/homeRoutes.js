@@ -43,7 +43,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
 // Renders page to add a subscription
 router.get('/add', withAuth, async (req, res) => {
     try {
-        res.render('addSubscription');
+        res.render('addsubscription');
     } catch (err) {
 
         res.status(500).json(err);
