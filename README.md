@@ -5,12 +5,22 @@ According to the Washington Post, the subscription market is worth around $750B 
 ## Screenshots
 #### Login Screen
 ![portfolio screenshot](/Public/assets/images/login-image.JPG)
+#### Login Screen-Mobile Viewport
+![portfolio screenshot](/Public/assets/images/login-image_mobileresponsive.JPG)
+#### Login Screen-Mobile Viewport with Expanded Menu
+![portfolio screenshot](/Public/assets/images/login-image_mobileresponsive_menu.JPG)
 #### Sign up Screen
 ![portfolio screenshot](/Public/assets/images/signup-image.JPG)
+#### Sign up Screen-Mobile Viewport
+![portfolio screenshot](/Public/assets/images/signup-image_mobileresponsive.JPG)
 #### Add Subscription Screen
 ![portfolio screenshot](/Public/assets/images/addsubscription-images.JPG)
+#### Add Subscription Screen-Mobile Viewport
+![portfolio screenshot](/Public/assets/images/addsubscription-image_mobileresponsive.JPG)
 #### View Subscriptions Screen
 ![portfolio screenshot](/Public/assets/images/viewsubscription-image.JPG)
+#### View Subscriptions Screen-Mobile Viewport
+![portfolio screenshot](/Public/assets/images/viewsubscription-image_mobileresponsive.JPG)
 
 ## Link to Deployed Application
 https://subscriptiontracker1.herokuapp.com/
